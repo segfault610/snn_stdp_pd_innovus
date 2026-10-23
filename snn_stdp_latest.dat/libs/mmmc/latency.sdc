@@ -1,0 +1,1 @@
+/home/userdata/24bvd0198/ASIC_Design_Lab/Raghunath_Sir_assgn/snn_lif_stpg/snn_stdp_final.enc.dat/mmmc/views/WORST_CASE/latency.sdc

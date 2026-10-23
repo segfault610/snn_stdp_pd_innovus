@@ -1,0 +1,205 @@
+Clock tree timing engine global stage delay update for MAX_DELAY:setup.early...
+Clock tree timing engine global stage delay update for MAX_DELAY:setup.early done. (took cpu=0:00:00.1 real=0:00:00.1)
+Clock tree timing engine global stage delay update for MAX_DELAY:setup.late...
+Clock tree timing engine global stage delay update for MAX_DELAY:setup.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+Clock tree timing engine global stage delay update for MIN_DELAY:hold.early...
+Clock tree timing engine global stage delay update for MIN_DELAY:hold.early done. (took cpu=0:00:00.0 real=0:00:00.0)
+Clock tree timing engine global stage delay update for MIN_DELAY:hold.late...
+Clock tree timing engine global stage delay update for MIN_DELAY:hold.late done. (took cpu=0:00:00.0 real=0:00:00.0)
+
+Skew Group Structure:
+=====================
+
+----------------------------------------------------------------------
+Skew Group         Sources    Constrained Sinks    Unconstrained Sinks
+----------------------------------------------------------------------
+clk/CONSTRAINTS       1              776                    0
+----------------------------------------------------------------------
+
+Skew Group Summary:
+===================
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Timing Corner            Skew Group         ID Target    Min ID    Max ID    Avg ID    Std.Dev. ID    Skew Target Type    Skew Target    Skew     Skew window occupancy
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+MAX_DELAY:setup.early    clk/CONSTRAINTS        -        0.000     0.109     0.059        0.037       ignored                  -         0.109              -
+MAX_DELAY:setup.late     clk/CONSTRAINTS    none         0.000     0.112     0.061        0.038       auto computed       *0.000         0.112    0.129% {0.000, 0.000}
+MIN_DELAY:hold.early     clk/CONSTRAINTS        -        0.000     0.113     0.062        0.038       ignored                  -         0.113              -
+MIN_DELAY:hold.late      clk/CONSTRAINTS        -        0.000     0.116     0.063        0.039       ignored                  -         0.116              -
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* - indicates that target was not met.
+
+Skew Group Min/Max path pins:
+=============================
+
+--------------------------------------------------------------------------------
+Timing Corner            Skew Group         Min ID    PathID    Max ID    PathID
+--------------------------------------------------------------------------------
+MAX_DELAY:setup.early    clk/CONSTRAINTS    0.000       1       0.109       2
+-    min weights_reg[2][0][7]/CK
+-    max weights_reg[7][0][2]/CK
+MAX_DELAY:setup.late     clk/CONSTRAINTS    0.000       3       0.112       4
+-    min weights_reg[2][0][7]/CK
+-    max weights_reg[7][0][2]/CK
+MIN_DELAY:hold.early     clk/CONSTRAINTS    0.000       5       0.113       6
+-    min weights_reg[2][0][7]/CK
+-    max weights_reg[3][2][2]/CK
+MIN_DELAY:hold.late      clk/CONSTRAINTS    0.000       7       0.116       8
+-    min weights_reg[2][0][7]/CK
+-    max weights_reg[3][2][2]/CK
+--------------------------------------------------------------------------------
+
+Timing for timing corner MAX_DELAY:setup.early, min clock_path:
+===============================================================
+
+PathID    : 1
+Path type : skew group clk/CONSTRAINTS (path 1 of 1)
+Start     : clk
+End       : weights_reg[2][0][7]/CK
+Delay     : 0.000
+
+------------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -----------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.003  1.879  (0.000,0.000)      -          776    
+weights_reg[2][0][7]/CK
+-     DFFSHQX1  rise   0.000   0.000   0.004  -      (329.875,225.475)  555.350   -       
+------------------------------------------------------------------------------------------------
+
+Timing for timing corner MAX_DELAY:setup.early, max clock_path:
+===============================================================
+
+PathID    : 2
+Path type : skew group clk/CONSTRAINTS (path 1 of 1)
+Start     : clk
+End       : weights_reg[3][2][0]/CK
+Delay     : 0.109
+
+----------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location         Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                    (um)              
+-- Clockpath trace ---------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.003  1.879  (0.000,0.000)    -          776    
+weights_reg[3][2][0]/CK
+-     DFFRHQX1  rise   0.109   0.109   0.166  -      (48.865,81.925)  130.790   -       
+----------------------------------------------------------------------------------------------
+
+Timing for timing corner MAX_DELAY:setup.late, min clock_path:
+==============================================================
+
+PathID    : 3
+Path type : skew group clk/CONSTRAINTS (path 1 of 1)
+Start     : clk
+End       : weights_reg[2][0][7]/CK
+Delay     : 0.000
+
+------------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -----------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.003  1.879  (0.000,0.000)      -          776    
+weights_reg[2][0][7]/CK
+-     DFFSHQX1  rise   0.000   0.000   0.004  -      (329.875,225.475)  555.350   -       
+------------------------------------------------------------------------------------------------
+
+Timing for timing corner MAX_DELAY:setup.late, max clock_path:
+==============================================================
+
+PathID    : 4
+Path type : skew group clk/CONSTRAINTS (path 1 of 1)
+Start     : clk
+End       : weights_reg[3][2][0]/CK
+Delay     : 0.112
+
+----------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location         Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                    (um)              
+-- Clockpath trace ---------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.003  1.879  (0.000,0.000)    -          776    
+weights_reg[3][2][0]/CK
+-     DFFRHQX1  rise   0.112   0.112   0.171  -      (48.865,81.925)  130.790   -       
+----------------------------------------------------------------------------------------------
+
+Timing for timing corner MIN_DELAY:hold.early, min clock_path:
+==============================================================
+
+PathID    : 5
+Path type : skew group clk/CONSTRAINTS (path 1 of 1)
+Start     : clk
+End       : weights_reg[2][0][7]/CK
+Delay     : 0.000
+
+------------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -----------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.003  1.851  (0.000,0.000)      -          776    
+weights_reg[2][0][7]/CK
+-     DFFSHQX1  rise   0.000   0.000   0.004  -      (329.875,225.475)  555.350   -       
+------------------------------------------------------------------------------------------------
+
+Timing for timing corner MIN_DELAY:hold.early, max clock_path:
+==============================================================
+
+PathID    : 6
+Path type : skew group clk/CONSTRAINTS (path 1 of 1)
+Start     : clk
+End       : weights_reg[3][2][0]/CK
+Delay     : 0.113
+
+----------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location         Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                    (um)              
+-- Clockpath trace ---------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.003  1.851  (0.000,0.000)    -          776    
+weights_reg[3][2][0]/CK
+-     DFFRHQX1  rise   0.113   0.113   0.173  -      (48.865,81.925)  130.790   -       
+----------------------------------------------------------------------------------------------
+
+Timing for timing corner MIN_DELAY:hold.late, min clock_path:
+=============================================================
+
+PathID    : 7
+Path type : skew group clk/CONSTRAINTS (path 1 of 1)
+Start     : clk
+End       : weights_reg[2][0][7]/CK
+Delay     : 0.000
+
+------------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location           Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                      (um)              
+-- Clockpath trace -----------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.003  1.851  (0.000,0.000)      -          776    
+weights_reg[2][0][7]/CK
+-     DFFSHQX1  rise   0.000   0.000   0.004  -      (329.875,225.475)  555.350   -       
+------------------------------------------------------------------------------------------------
+
+Timing for timing corner MIN_DELAY:hold.late, max clock_path:
+=============================================================
+
+PathID    : 8
+Path type : skew group clk/CONSTRAINTS (path 1 of 1)
+Start     : clk
+End       : weights_reg[3][2][0]/CK
+Delay     : 0.116
+
+----------------------------------------------------------------------------------------------
+Name  Lib cell  Event  Incr   Arrival  Slew   Cap    Location         Distance  Fanout  Status
+                       (ns)   (ns)     (ns)   (pF)                    (um)              
+-- Clockpath trace ---------------------------------------------------------------------------
+clk
+-     -         rise   -       0.000   0.003  1.851  (0.000,0.000)    -          776    
+weights_reg[3][2][0]/CK
+-     DFFRHQX1  rise   0.116   0.116   0.178  -      (48.865,81.925)  130.790   -       
+----------------------------------------------------------------------------------------------
+
+

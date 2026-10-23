@@ -1,0 +1,46 @@
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Wed Sep 23 00:52:34 2026
+
+Design Name: snn_stdp
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (356.7000, 354.3800)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+**WARN: (IMPVFC-97):	IO pin clk of net clk has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin reset of net reset has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin enable of net enable has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin learning_enable of net learning_enable has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin v_thresh[15] of net v_thresh[15] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin v_thresh[14] of net v_thresh[14] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin v_thresh[13] of net v_thresh[13] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin v_thresh[12] of net v_thresh[12] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin v_thresh[11] of net v_thresh[11] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin v_thresh[10] of net v_thresh[10] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin v_thresh[9] of net v_thresh[9] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin v_thresh[8] of net v_thresh[8] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin v_thresh[7] of net v_thresh[7] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin v_thresh[6] of net v_thresh[6] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin v_thresh[5] of net v_thresh[5] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin v_thresh[4] of net v_thresh[4] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin v_thresh[3] of net v_thresh[3] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin v_thresh[2] of net v_thresh[2] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin v_thresh[1] of net v_thresh[1] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (IMPVFC-97):	IO pin v_thresh[0] of net v_thresh[0] has not been assigned. Please make sure it is assigned and rerun verifyConnectivity.
+**WARN: (EMS-27):	Message (IMPVFC-97) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**** 00:52:34 **** Processed 5000 nets.
+**** 00:52:35 **** Processed 10000 nets.
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Wed Sep 23 00:52:35 2026
+Time Elapsed: 0:00:01.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.6  MEM: 0.000M)
+

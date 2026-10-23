@@ -1,0 +1,95 @@
+Using Power View: WORST_CASE.
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=2127.14MB/4294.86MB/2199.55MB)
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+*	
+*
+* 	Date & Time:	2026-Sep-23 00:51:26 (2026-Sep-22 19:21:26 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: snn_stdp
+*
+*	Liberty Libraries used:
+*	        WORST_CASE: /home/cadence/install/FOUNDRY/digital/90nm/dig/lib/slow.lib
+*
+*	Parasitic Files used:
+*
+*       Power View : WORST_CASE
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power
+*
+-----------------------------------------------------------------------------------------
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        8.66302980 	   73.1858%
+Total Switching Power:       2.87255873 	   24.2676%
+Total Leakage Power:         0.30144358 	    2.5466%
+Total Power:                11.83703210
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         4.281      0.2813     0.08438       4.647       39.26
+Macro                                  0           0           0           0           0
+IO                                     0           0           0           0           0
+Combinational                      4.382       2.591      0.2171        7.19       60.74
+Clock (Combinational)                  0           0           0           0           0
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                              8.663       2.873      0.3014       11.84         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       0.9      8.663       2.873      0.3014       11.84         100
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*              Highest Average Power: csa_tree_add_85_71_I4_groupi_g3388 (NOR2X2):         0.008955
+*              Highest Leakage Power:           FE_OFC96_n_3374 (BUFX12):        0.0002199
+*                Total Cap:      7.87948e-11 F
+*                Total instances in design:  9637
+*                Total instances in design with no power:     0
+*                Total instances in design with no activty:     0
+
+*                Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+ 
+** INFO:  (VOLTUS_POWR-3465): There are 0 decaps and 0 fillers in the design
+
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=2127.66MB/4294.86MB/2199.55MB)
+
